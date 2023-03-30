@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Identify diseased Leaves. Our Machine Learning Model will process it and analyse the leaf in the image and detect the caused disease. The image will be checked through 70,000 images from dataset."
+    />
+    <meta name="”robots”" content="”noindex," nofollow” />
+    <meta name="”robots”" content="”index," follow” />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Resources/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Resources/favicon.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- For SEO -->
+    <link rel="canonical" href="http://projectfeeder.com/" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Project Feeder</title>
+  </head>
+  <body>
+    <div class="sidebar"></div>
+    <div class="sidebar s-aside"></div>
+
+    <header>
+      <div style="display: flex">
+        <div class="container1">
+          <div style="margin-top: 100px; margin-left: 80px">
+            <h4><span>import </span>pandas <span>as </span>pd</h4>
+            <h4><span>import </span>matplotlib.pyplot <span>as </span>plt</h4>
+            <h1>project.<span>FEEDER</span>()</h1>
+          </div>
+          <div>
+            <p>
+              As the primary sites of photosynthesis, leaves manufacture food
+              for plants, which in turn ultimately nourish and sustain all land
+              animals. They are attached by a continuous vascular system to the
+              rest of the plant so that free exchange of nutrients, water, and
+              end products of photosynthesis (oxygen and carbohydrates in
+              particular) can be carried to its various parts.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: center">
+            <a href="#main"><button>Know More</button></a>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="Resources/patta.png" />
+          <img src="Resources/line1.png" />
+          <img src="Resources/line2.png" />
+          <img src="Resources/line3.png" />
+          <h2>FOOD</h2>
+          <h2>OXYGEN</h2>
+          <h2>WATER</h2>
+        </div>
+      </div>
+
+      <!-- Background Blur -->
+      <div class="batti-green1"></div>
+      <div class="batti-green2"></div>
+    </header>
+
+    <section id="main">
+      <div class="head">
+        <h2>Get your Leaf Tested</h2>
+      </div>
+      <div style="display: flex">
+        <div class="left">
+          <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input
+              type="file"
+              id="img"
+              name="img"
+              accept="image/*"
+              style="visibility: hidden"
+            />
+          </form>
+
+          <button class="addfiles">
+            <h1>Add your image</h1>
+            <img style="width: 150px" src="Resources/plusPNG.PNG" />
+            <img
+              id="image-to-hide"
+              style="
+                width: 413px;
+                transform: rotate(60deg);
+                position: absolute;
+                right: 600px;
+                top: 930px;
+                opacity: 0.7;
+              "
+              src="Resources/arrow.png"
+            />
+          </button>
+        </div>
+        <div class="right">
+          <div class="box">
+            <h2 id="headinf" style="opacity: 0.9">What this Button Does !!</h2>
+            <p id="paragraf">
+              Click on the button to add your image.<br />
+              Our Machine Learning Model will process it and analyse the leaf in
+              the image and detect the caused disease. The image will be checked
+              through 70,000 images from the dataset we’ve collected.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Background Blur -->
+      <div class="batti-green3"></div>
+      <div class="batti-yellow1"></div>
+    </section>
+
+    <footer id="divya">
+      <div class="head">
+        <h2>Accuracy Of The Model</h2>
+      </div>
+      <div style="display: flex">
+        <div class="dabba d-1">
+          <h3>Accuracy VS Validation Accuracy</h3>
+          <img src="Resources/graph1.png" />
+        </div>
+        <div class="dabba d-2">
+          <h3>Loss VS Validation Loss</h3>
+          <img src="Resources/graph2.png" />
+        </div>
+      </div>
+      <!-- Background Blur -->
+      <div class="batti-yellow2"></div>
+      <div class="batti-yellow3"></div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
