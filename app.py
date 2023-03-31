@@ -110,11 +110,13 @@ def upload():
 
         # Make prediction
         pred = model_predict(file_path, model)
-
+        
+        os.remove(file_path)
         # Process your result for human
         # # pred_class = preds.argmax(axis=-1)            # Simple argmax
         # pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
         # result = str(pred_class[0][0][1])               # Convert to string
+
 
         result = [f"The detected disease is {ref[pred]} ", f"Apple Cedar apple rust is a fungal disease that affects apple trees, causing yellow-orange spots on leaves, as well as brown or black spots on fruit. It is caused by the fungus Gymnosporangium juniperi-virginianae and is often found on trees near juniper plants."]
         return result
