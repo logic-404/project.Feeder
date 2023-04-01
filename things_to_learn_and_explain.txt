@@ -1,0 +1,4 @@
+how was the model made - vgg16
+	everything related to model training and saving
+how does it predict
+flask api working
