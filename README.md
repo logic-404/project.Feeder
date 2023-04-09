@@ -1,8 +1,10 @@
-# project.Feeder
-This repository contains a Flask web application that predicts the plant disease using a pre-trained Convolutional Neural Network (CNN) model. The trained model is integrated with the Flask web application to build an interactive user interface.
+# Project Feeder()
 
-Project Structure
-.
+## Description
+Project Feeder() is a machine learning application built using Keras and Flask, that detects diseases in fruits and vegetables. It is capable of classifying 38 different types of diseases across 14 different crops. 
+
+## Project Structure
+```bash
 ├── static
 │   ├── css
 │   └── js
@@ -12,36 +14,34 @@ Project Structure
 ├── app.py
 ├── best_model.h5
 └── README.md
+```
 
-static: This directory contains the static assets of the Flask app (JavaScript and CSS).
-templates: This directory contains the HTML files that define the structure of the web pages.
-app.py: This file is the Flask app's main entry point that sets up the web server and implements the backend functionality for the app.
-best_model.h5: This is the pre-trained Convolutional Neural Network (CNN) model that is used for the plant disease classification.
-README.md: A Markdown file that provides useful information about the project.
+## Installation
+To use this application, please follow the steps below:
 
-Requirements
-To run this project you need to have the following installed:
-- Flask
-- Keras
-- TensorFlow
-- Numpy
+1. Clone the repository: `git clone https://github.com/username/project-feeder.git`
+2. Install the required dependencies using `pip install -r requirements.txt`
+3. Run the app: `python app.py`
 
-Usage
-To run the Flask app, follow these steps:
-1. Clone the repository: git clone https://github.com/your_username/machine-learning-plant-disease-detector
-2. Navigate to the project directory: cd machine-learning-plant-disease-detector
-3. Install the required packages: pip install -r requirements.txt
-4. Run the Flask app: python app.py
-5. Open your web browser and navigate to http://127.0.0.1:5000/.
+## Usage
+After following the installation steps, open the browser and go to http://127.0.0.1:5000/ to access the application's homepage. 
 
-Model Training
-The Convolutional Neural Network (CNN) model used in this project was trained on the Plant Village dataset using the VGG19 architecture. The model achieved an accuracy of 95% on the validation set. The training process is not included in this repository.
+1. Click on the "Choose File" button to upload an image of a fruit or vegetable
+2. Click on the "Submit" button to submit the form
+3. Wait for a few seconds until the application processes the image and predicts the disease
+4. The predicted disease along with a brief description of the disease will be displayed on the screen
 
-Flask App Workflow
-1. User uploads an image of the plant with a suspected disease
-2. The image is sent to the Flask app using a POST request
-3. The app processes the image using the pre-trained CNN model
-4. The app returns the predicted disease with a brief description to the user.
+## Dependencies
+* numpy
+* keras
+* tensorflow
+* flask
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Model
+The application uses a pre-trained VGG19 model for image classification, which was trained on the PlantVillage dataset. The model was saved with Keras model.save() and can be found in the file `best_model.h5`.
+
+## Credits
+This application was built by [your name], inspired by the work of [Prakhar Mishra](https://github.com/prakhar21) and the PlantVillage research group.
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
